@@ -9,19 +9,44 @@
   </head>
   <body>
     <div class="container">
+      <div class="login">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Player One</h1>
+      <form id="login" action="index.html" method="post">
+  <label for="name1">First Name:</label><br></br><input type="text" id="name1" value="" placeholder="Enter your first name"/><br></br>
+  <label for="name2">Second Name:</label><br></br><input type="text"id="name2" value="" placeholder="Enter your second name"/><br></br>
+</form>
+</div>
+<div class="col-md-6">
+<h1>Player Two</h1>
+<form id="login" action="index.html" method="post">
+<label for="name1">First Name:</label><br></br><input type="text" id="name1" value="" placeholder="Enter your first name"/><br></br>
+<label for="name2">Second Name:</label><br></br><input type="text"id="name2" value="" placeholder="Enter your second name"/><br></br>
+</form>
+<div class="wrapper">
+<button id="submit" type="button" name="button">Start game!</button>
+</div>
+</div>
+</div>
+</div>
+<div class="game">
+
       <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h2>Player One</h2>
         <button type="button" onClick="roll1()" name="roll-dice">Roll Dice</button>
         <h3>Scores:</h3><div id="result1"></div>
         <h4>Points:</h3><div id="points1"></div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <h2>Player Two</h2>
           <button type="button" onClick="roll2()" name="roll-dice">Roll Dice</button>
           <h3>Scores:</h3><div id="result2"></div>
           <h4>Points:</h4><div id="points2"></div>
           </div>
           </div>
+        </div>
+</div>
 </body>
 </html>
