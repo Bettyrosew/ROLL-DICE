@@ -1,14 +1,22 @@
 function roll1() {
-  var result1=document.getElementById("result1")
   var r1=Math.floor(Math.random() * 6) +1;
   var diceScore=r1;
-  result1.innerHTML=r1
-  status.innerHTML=("You rolled"+diceScore)
+  if (diceScore!=1) {
+    total1+=diceScore
+  }else  {
+    total1=0;
+  }
+  result1.innerHTML=("You have rolled " + r1)
+  points1.innerHTML=("Your total points are " + total1)
 }
 function roll2() {
-  var result2=document.getElementById("result2")
   var r2=Math.floor(Math.random() * 6) +1;
   var diceScore=r2;
-  result2.innerHTML=r2
-  status.innerHTML=("You rolled"+diceScore)
+  if (diceScore!=1) {
+    total2+=diceScore
+  }else {
+    total2=0;
+  }
+  result2.innerHTML=("You have rolled " + r2)
+  points2.innerHTML=("Your total points are " + total2)
 }
