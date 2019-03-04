@@ -6,7 +6,7 @@
   <title>Pig dice</title>
 </head>
 <body>
-  <span id="head"><h1>WELCOME TO PIG DICE GAME</h1></span><br></br>
+  <span id="head"><h1>WELCOME TO PIG DICE GAME</h1></span>
   <div class="container">
     <div class="login">
       <span class="hdr"><h2>LOG IN </h2></span>
@@ -38,32 +38,49 @@
     </div>
 
     <div class="game">
+      <div class="rules">
+        <span class="hdr"><h2>HOW TO PLAY..</h2></span>
+        <ul>
+          <li>Click 'roll dice' button to roll the dice.</li>
+          <li>If dice rolls on number 1 you'll get zero points and your opponent is given a chance to play.</li>
+          <li>Once any player gets 100 points they win the game.</li>
+          <li>Clicking on 'hold' button allows alternate player to play and gives an alert of current player's points.</li>
+        </ul>
+      </div>
       <div id="playersnames">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-5">
+            <div class="left">
             <span class="hd"><h2>Player One</h2></span>
             <p>First Name:<span class="first-name1"></span></p>
             <p>Second Name:<span class="second-name1"></span></p>
           </div>
-          <div class="col-md-6">
+        </div>
+          <div class="col-md-5">
+            <div class="side">
             <span class="hd"><h2>Player Two</h2></span>
             <p>First Name:<span class="first-name2"></span></p>
             <p>Second Name:<span class="second-name2"></span></p>
           </div>
         </div>
+        </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-5">
+            <div class="left">
             <button type="button"  name="roll-dice" class="btn btn-secondary" id="roll1">ROLL DICE</button>
             <span class="list"> <h3>Score:</h3></span><div id="result1"></div>
             <span class="list"><h4>Points:</h3></span><div id="points1"></div>
             <button type="button"  name="hold" class="btn btn-secondary" id="hold1">HOLD</button>
             </div>
-            <div class="col-md-6">
+          </div>
+            <div class="col-md-5">
+              <div class="side">
               <button type="button" name="roll-dice" class="btn btn-secondary" id="roll2">ROLL DICE</button>
-              <span class="list"><h3>Scores:</h3></span><div id="result2"></div>
+              <span class="list"><h3>Score:</h3></span><div id="result2"></div>
               <span class="list"><h4>Points:</h4></span><div id="points2"></div>
               <button type="button"  name="hold" class="btn btn-secondary" id="hold2">HOLD</button>
           </div>
+        </div>
         </div>
       </div>
       <script src="js/jquery-3.3.1.js"></script>
