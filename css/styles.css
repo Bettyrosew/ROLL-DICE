@@ -2,12 +2,38 @@
   display: none;
 }
 .login {
-  font-size: 20px;
+  font-size: 25px;
+  color: #7B241C;
+  font-family:Jazz LET, fantasy;
 }
 .wrapper {
   text-align: center;
 }
 body{
-  background: url(file:///home/mburu/Downloads/pexels-photo-707837.jpeg)
-
+  background: url(file:///home/mburu/Downloads/pexels-photo-707837.jpeg);
+}
+#head {
+  color: #909497;
+  font-family:Jazz LET, fantasy;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+}
+#playersnames {
+  color: #7B241C;
+  font-family:Jazz LET, fantasy;
+  font-size:25px;
+}
+.list {
+  color:#B3B6B7;
+}
+.hd {
+  color:#B3B6B7;
+  font-family: Luminari, fantasy;
+}
+.hdr {
+  color:#909497;
+  font-weight: bold;
+  font-style:italic;
+  text-align: center;
 }
