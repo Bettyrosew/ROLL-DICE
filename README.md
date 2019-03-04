@@ -4,7 +4,7 @@
 #### By Bettyrose Mburu.
 ## Description
 It is an online game which consists of two players ,playing against each other, who roll a dice one at a time. The number the player rolls on is added to the points he/she has acquired.Unfortunately, if one rolls on number 1 their opponent is given a chance to play and they don't get any points.Alternatively, one can click the hold button to give the opponent a chance to play in case he/she is satisfied with his/her current points.However, the winner of the game is the person who arrives at 100 points first.
-##Author(s) information.
+## Author(s) information.
 The author of the website is called Bettyrose Waithera Mburu. She is still a junior web developer who is carrying out minor projects or rather practice projects including the pig dice game.Hope you enjoy!
 ## Setup/Installation Requirements
 No setup requirements ,one only needs to copy the link and open it on a new webpage.
@@ -21,8 +21,8 @@ If you encounter any problems during operation with the tracker, you can contact
 | On clicking hold button |  Other play is given chance to play but round core is zer0 |
 | If dice rolls on number 1 | Other player is given a chance but total points remain  |
 ## Link to the app
-
-##Known Bugs
+This is the ive link to the page:
+## Known Bugs
 One has to click severally on roll dice button for app to start operating.
 ### License
 MIT License.
