@@ -22,7 +22,7 @@ body{
 #playersnames {
   color: #7B241C;
   font-family:Jazz LET, fantasy;
-  font-size:25px;
+  font-size:20px;
 }
 .list {
   color:#B3B6B7;
@@ -36,4 +36,15 @@ body{
   font-weight: bold;
   font-style:italic;
   text-align: center;
+}
+.rules {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+.side {
+  float:right;
+}
+.left {
+  float: left;
 }
