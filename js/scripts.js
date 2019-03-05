@@ -15,62 +15,66 @@ function play1() {
   document.getElementById("roll1").disabled=false;
   document.getElementById("roll2").disabled=true;
 }
+var score1=0;
+var score2=0;
 //User Interface Logic
-function roll1() {
-  var diceScore=Math.floor(Math.random() * 6) +1;
-  result1.innerHTML=("You have rolled " + diceScore);
-  if (diceScore!==1) {
-    score1+=diceScore;
-  }else  {
-    score1=0;
-    play2();
-  }
-  points1.innerHTML=(score1);
-}
-function roll2() {
-  var diceScore=Math.floor(Math.random() * 6) +1;
-  result2.innerHTML=("You have rolled " + diceScore);
-  if (diceScore!=1) {
-    score2+=diceScore;
-  }else {
-    score2=0;
-    play1();
-  }
-  points2.innerHTML=(score2);
-}
-function hold1() {
-  alert("You have " +score1 +" points");
-  score1=0;
-  if (score1==100){
-    alert("You have won the game!Hurray!");
-  }else {
-    play2();
-  }
-
-}
-function hold2() {
-  alert("You have " +score2 +" points");
-  score2=0;
-  if (score2==100){
-    alert("You have won the game!Hurray!");
-  }else {
-    play1();
-  }
-
-}
 $(document).ready(function() {
   $("#roll1").click(function() {
     roll1();
   });
+  function roll1() {
+    var diceScore=Math.floor(Math.random() * 6) +1;
+    result1.innerHTML=("You have rolled " + diceScore);
+    if (diceScore!==1) {
+      score1+=diceScore;
+    }else  {
+      score1=0;
+      play2();
+    }
+    points1.innerHTML=(score1);
+  }
+
   $("#roll2").click(function() {
     roll2();
   });
+  function roll2() {
+    var diceScore=Math.floor(Math.random() * 6) +1;
+    result2.innerHTML=("You have rolled " + diceScore);
+    if (diceScore!=1) {
+      score2+=diceScore;
+    }else {
+      score2=0;
+      play1();
+    }
+    points2.innerHTML=(score2);
+  }
+
   $("#hold1").click(function() {
     hold1();
   });
+  function hold1() {
+    alert("You have " +score1 +" points");
+    score1=0;
+    if (score1==100){
+      alert("You have won the game!Hurray!");
+    }else {
+      play2();
+    }
+  }
+
   $("#hold2").click(function() {
     hold2();
   });
+  function hold2() {
+    alert("You have " +score2 +" points");
+    score2=0;
+    if (score2==100){
+      alert("You have won the game!Hurray!");
+    }else {
+      play1();
+    }
+
+  }
   $("form#new-player").submit(function(event) {
     event.preventDefault();
 
