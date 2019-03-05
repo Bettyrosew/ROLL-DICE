@@ -10,7 +10,7 @@
   text-align: center;
 }
 body {
-  background: url(file:///home/mburu/Downloads/pexels-photo-707837.jpeg);
+  background-color:#17202A;
 }
 #head {
   color: #909497;
@@ -22,7 +22,7 @@ body {
 #playersnames {
   color: #7B241C;
   font-family:Jazz LET, fantasy;
-  font-size:20px;
+  font-size:25px;
 }
 .list {
   color:#B3B6B7;
@@ -41,10 +41,15 @@ body {
   font-size: 20px;
   font-weight: bold;
   font-style: italic;
+  color:#922B21 ;
 }
 .side {
   float:right;
 }
 .left {
   float: left;
+}
+img {
+  width: 1000px;
+  text-align: center;
 }
