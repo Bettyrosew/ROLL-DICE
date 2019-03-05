@@ -6,7 +6,7 @@ function Player (first,last) {
 Player.prototype.fullName=function() {
   return this.firstName+ " " + this.secondName;
 }
-//User Interface Logic
+
 function play2() {
   document.getElementById("roll1").disabled=true;
   document.getElementById("roll2").disabled=false;
@@ -15,46 +15,46 @@ function play1() {
   document.getElementById("roll1").disabled=false;
   document.getElementById("roll2").disabled=true;
 }
-
+//User Interface Logic
 function roll1() {
   var diceScore=Math.floor(Math.random() * 6) +1;
+    result1.innerHTML=("You have rolled " + diceScore);
   if (diceScore!==1) {
     score1+=diceScore;
   }else  {
     score1=0;
-    play2()
+    play2();
   }
-  result1.innerHTML=("You have rolled " + diceScore);
   points1.innerHTML=(score1);
 }
 function roll2() {
   var diceScore=Math.floor(Math.random() * 6) +1;
+  result2.innerHTML=("You have rolled " + diceScore);
   if (diceScore!=1) {
-    score2+=diceScore
+    score2+=diceScore;
   }else {
     score2=0;
-    play1()
+    play1();
   }
-  result2.innerHTML=("You have rolled " + diceScore)
-  points2.innerHTML=(score2)
+  points2.innerHTML=(score2);
 }
 function hold1() {
- alert("You have " +score1 +" points")
-  score1=0
+ alert("You have " +score1 +" points");
+  score1=0;
  if (score1==100){
-   alert("You have won the game!Hurray!")
+   alert("You have won the game!Hurray!");
  }else {
-   play2()
+   play2();
  }
 
 }
 function hold2() {
- alert("You have " +score2 +" points")
-  scor2=0
+ alert("You have " +score2 +" points");
+  score2=0;
  if (score2==100){
-   alert("You have won the game!Hurray!")
+   alert("You have won the game!Hurray!");
  }else {
-   play1()
+   play1();
  }
 
 }
