@@ -21,9 +21,9 @@ If you encounter any problems during operation with the tracker, you can contact
 | On clicking hold button |  Other play is given chance to play but round core is zer0 |
 | If dice rolls on number 1 | Other player is given a chance but total points remain  |
 ## Link to the app
-This is the ive link to the page:
+This is the ive link to the page:https://bettyrosew.github.io/ROLL-DICE/
 ## Known Bugs
-One has to click severally on roll dice button for app to start operating.
+Once in a while one has to double click to roll the dice.
 ### License
 MIT License.
 Copyright (c) 2019 Bettyrose Mburu.
