@@ -18,7 +18,7 @@ function play1() {
 //User Interface Logic
 function roll1() {
   var diceScore=Math.floor(Math.random() * 6) +1;
-    result1.innerHTML=("You have rolled " + diceScore);
+  result1.innerHTML=("You have rolled " + diceScore);
   if (diceScore!==1) {
     score1+=diceScore;
   }else  {
@@ -39,23 +39,23 @@ function roll2() {
   points2.innerHTML=(score2);
 }
 function hold1() {
- alert("You have " +score1 +" points");
+  alert("You have " +score1 +" points");
   score1=0;
- if (score1==100){
-   alert("You have won the game!Hurray!");
- }else {
-   play2();
- }
+  if (score1==100){
+    alert("You have won the game!Hurray!");
+  }else {
+    play2();
+  }
 
 }
 function hold2() {
- alert("You have " +score2 +" points");
+  alert("You have " +score2 +" points");
   score2=0;
- if (score2==100){
-   alert("You have won the game!Hurray!");
- }else {
-   play1();
- }
+  if (score2==100){
+    alert("You have won the game!Hurray!");
+  }else {
+    play1();
+  }
 
 }
 $(document).ready(function() {
@@ -89,9 +89,9 @@ $(document).ready(function() {
     $("input#new-second-name1").val("");
     $("input#new-first-name2").val("");
     $("input#new-second-name2").val("");
-      $(".first-name1").text(newPlayer1.firstName);
-      $(".second-name1").text(newPlayer1.secondName);
-      $(".first-name2").text(newPlayer2.firstName);
-      $(".second-name2").text(newPlayer2.secondName);
+    $(".first-name1").text(newPlayer1.firstName);
+    $(".second-name1").text(newPlayer1.secondName);
+    $(".first-name2").text(newPlayer2.firstName);
+    $(".second-name2").text(newPlayer2.secondName);
   });
 });
