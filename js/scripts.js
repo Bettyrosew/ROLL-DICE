@@ -3,6 +3,7 @@ function Player (first,last) {
   this.firstName=first;
   this.secondName=last;
 }
+
 Player.prototype.fullName=function() {
   return this.firstName+ " " + this.secondName;
 }
@@ -15,6 +16,7 @@ function play1() {
   document.getElementById("roll1").disabled=false;
   document.getElementById("roll2").disabled=true;
 }
+
 var score1=0;
 var score2=0;
 //User Interface Logic
